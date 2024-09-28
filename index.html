@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code GPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QR Code GPS Tracking Game</h1>
+    </header>
+
+    <!-- Section for the Map -->
+    <div id="map"></div>
+
+    <!-- Section for the QR Code Scanner -->
+    <div id="qr-scanner">
+        <video id="preview"></video>
+    </div>
+
+    <!-- Section for status updates and messages -->
+    <div id="status">
+        <p>Waiting for location and QR code...</p>
+    </div>
+
+    <!-- Linking the JavaScript -->
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script> <!-- QR Code Scanner library -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> <!-- Leaflet for map rendering -->
+    <script src="script.js"></script>
+</body>
+</html>
